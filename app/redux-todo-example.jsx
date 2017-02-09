@@ -6,7 +6,7 @@ var stateDefault = {
         searchText: '',
         showCompleted: false,
         todo: []
-    };
+};
 
 var reducer = (state = stateDefault, action) => {
 
@@ -19,8 +19,6 @@ var reducer = (state = stateDefault, action) => {
         default:
             return state;
     }
-
-
 
 };
 var store = redux.createStore(reducer, redux.compose(
